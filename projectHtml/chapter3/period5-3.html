@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>元素状态</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            background-color: #eee;
+        }
+
+        .contain {
+            margin: 50px;
+        }
+
+        .sect {
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contain">
+        <div class="sect">
+            <!--内容显示-->
+            <h4 class="show-text">内容显示</h4>
+            <!--内容不显示-->
+            <h4 class="hidden-text" style="display:none">内容显示</h4>
+        </div>
+
+
+        <div class="sect">
+            <!--输入框可编辑状态-->
+            <input class="enabled-text" type="text">
+            <!--输入框不可编辑-->
+            <input class="disabled-text" type="text" disabled="disabled">
+        </div>
+
+
+        <div class="sect">
+            <!-- 元素选中 -->
+            <form id="language">
+                元素选中？<br />
+                <!--选中-->
+                <div><input name="python" type="checkbox" checked="checked" />Python</div>
+                <!--未选中-->
+                <div><input name="JavaScript" type="checkbox"/>JavaScript</div>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

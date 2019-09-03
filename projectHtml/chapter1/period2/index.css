@@ -1,0 +1,103 @@
+html,body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(86, 228, 221);
+}
+
+
+#main {
+    margin: 200px auto;
+    width: 400px;
+    height: 350px;
+    background: #fff;
+    padding: 30px 60px;
+}
+
+#main h1 {
+    height: 50px;
+    line-height: 80px;
+}
+
+
+.other-login {
+    height: 80px;
+}
+
+.other-login>ul>li {
+    list-style: none;
+    float: left;
+    height: 45px;
+    width: 20%;
+    margin: 0 auto;
+}
+.other-login>ul>li>a {
+    width: 60px;
+    height: 70px;
+    display: block;
+}
+
+.text-2 {
+    margin: -10px auto;
+}
+
+#main.mail-login {
+    display: block;
+    width: 100px;
+}
+
+#email {
+margin: 25px auto 0;
+}
+.mail-login>input {
+    height: 34px;
+    width: 100%;
+    margin: 20px auto 0;
+    outline: 0;
+    border: 1px solid #dadada;
+    border-radius: 3px;
+    text-indent: 10px;
+    outline: none;
+}
+
+#btn-login {
+    height: 34px;
+    display: block;
+    text-align: center;
+    line-height: 34px;
+    background: rgb(216, 83, 83);
+    border-radius: 3px;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 20px;
+}
+#btn-login:hover {
+    background: rgb(221, 15, 15);
+}
+
+#register-forgetpsd {
+    margin: 10px auto 30px;
+    font: 10px;
+}
+.forget-pwd,.register {
+    color: rgb(158, 25, 25);
+    float: left;
+    text-decoration: none;
+    list-style-type: none;
+}
+.forget-pwd:hover, .register:hover {
+    text-decoration: underline;
+}
+
+#register {
+    float: right;
+}
+.register {
+    float: right;
+}
+.no-account {
+    color: #292727;
+}

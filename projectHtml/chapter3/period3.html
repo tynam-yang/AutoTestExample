@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>findElement</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            background-color: #eee;
+        }
+
+        .contain {
+            margin: 50px;
+        }
+
+        #search {
+            width: 200px;
+            height: 20px;
+            outline: none;
+            padding: 1px 5px;
+        }
+
+        .btn-search {
+            font-size: 20px;
+            width: 60px;
+        }
+
+        #sex {
+            display: block;
+            outline: none;
+            width: 20px;
+        }
+
+        #language {
+            margin-top: 40px;
+        }
+        #language input[type=checkbox] {
+            zoom: 160%;
+            margin-right: 5px;
+        }
+
+        h4 {
+            margin: 40px;
+        }
+
+        p {
+            margin: 40px;
+        }
+
+        a {
+            margin: 40px;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        button {
+            display: block;
+            margin: 30px;
+            font-size: 20px;
+            border-radius: 5px;
+            outline: none;
+        }
+        button:hover {
+            color: rgb(66, 66, 66);
+            background-color: rgb(228, 228, 228);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contain">
+        <!-- id -->
+        <input id="search" type="text" maxlength="10">
+        <!-- class -->
+        <input class="btn-search" type="button" value="检索">
+        <!-- name -->
+        <form id="language">
+            您掌握的语言有？<br />
+            <label><input name="language" type="checkbox" value="" />Python</label>
+        </form>
+        <!-- tag -->
+        <h4>tag定位</h4>
+        <!-- xPath -->
+        <p>xPath定位</p>
+        <!-- link -->
+        <a href="/tynam/test">Tynam</a>
+        <!-- Partial link -->
+        <a href="#">Partial link定位</a>
+        <!-- css -->
+        <button class="css">CSS定位</button>
+    </div>
+
+</body>
+
+</html>

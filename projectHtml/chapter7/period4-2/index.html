@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>多级菜单</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+        body {
+            background: #eee;
+        }
+
+        #nav {
+            width: 700px;
+            height: 80px;
+            background: #fff;
+            margin: 50px auto;
+        }
+
+        ul {
+            background: #fff;
+        }
+
+        ul li {
+            float: left;
+            display: block;
+            height: 80px;
+            line-height: 80px;
+            padding: 0 46px;
+            position: relative;
+        }
+
+        ul li a {
+            color: black;
+            font-size: 20px;
+        }
+        ul li:hover {
+            background: #e33333;
+            color: #fff;
+        }
+
+        ul li ul li {
+            float: none;
+        }
+
+        ul li ul {
+            position: absolute;
+            top: 80px;
+            left: 0;
+            display: none;
+        }
+
+        ul li ul li:hover {
+            background: #e33333;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="nav">
+        <ul>
+            <li><a href="#">商城</a></li>
+            <li onmouseover="show(this)" onmouseout="hide(this)"><a href="#">水果</a>
+                <ul>
+                    <li><a href="#">苹果</a> </li>
+                </ul>
+            </li>
+            <li onmouseover="show(this)" onmouseout="hide(this)"><a href="#">家电</a>
+                <ul>
+                    <li><a href="#">电视</a> </li>
+                    <li><a href="#">冰箱</a> </li>
+                </ul>
+            </li>
+            <li onmouseover="show(this)" onmouseout="hide(this)"><a href="#">链接</a>
+                <ul>
+                    <li><a href="https://www.baidu.com/">百度</a> </li>
+                    <li><a href="https://cn.bing.com/">必应</a> </li>
+                </ul>
+            </li>
+            <li><a href="#">外卖配送</a></li>
+        </ul>
+    </div>
+    <script>
+        function show(li) {
+            var ul = li.getElementsByTagName("ul")[0];
+            ul.style.display = "block";
+        }
+        function hide(li) {
+            var ul = li.getElementsByTagName("ul")[0];
+            ul.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

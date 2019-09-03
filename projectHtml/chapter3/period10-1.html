@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>特殊Dom结构操作</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            background-color: #eee;
+        }
+
+        #windows, #noWindows {
+            margin: 20px 50px;
+            width: 500px;
+            height: 100px;
+        }
+
+        #windows input, #noWindows input {
+            font-size: 20px;
+        }
+
+        #alertWindows {
+			position: relative;
+			background: #C9D5E1;
+			width: 60%;
+			height: 80%;
+			border-radius: 5px;
+			margin: 3% 27%;
+			}
+        #header span {
+			line-height: 80px;
+			padding: 15px;
+		}
+		#header-right {
+			position: absolute;
+			width: 25px;
+			height: 25px;
+			right: 5px;
+			top: 5px;
+			text-align: center;
+			font-size: 22px;
+			cursor: pointer;
+			}
+
+    </style>
+</head>
+
+<body>
+<!--windows弹窗-->
+    <div id="windows">
+        <h5>windows 弹窗</h5>
+        <input type="button" onclick="windowsFunction()" value="windows 弹窗" />
+        <script>
+        function windowsFunction(){
+	        alert("你好，这里是 windows 弹窗");
+        }
+    </script>
+    </div>
+<!--非windows弹窗-->
+    <div id="noWindows">
+        <h5>非 windows 弹窗</h5>
+        <input type="button" onclick="noWindowsFunction()" value="非 windows 弹窗">
+		<div id='alertWindows'>
+            <div id="header">
+                <span>你好，这里是非 windows 弹窗</span>
+                <div id="header-right" onclick="hidder()">x</div>
+            </div>
+		</div>
+		<script type="text/javascript">
+			document.getElementById('alertWindows').style.display="none";
+
+			function noWindowsFunction(){
+				document.getElementById('alertWindows').style.display="";
+			}
+
+			function hidder(){
+				document.getElementById('alertWindows').style.display="none";
+			}
+		</script>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>树结构</title>
+
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<!-- page specific plugin styles -->
+	<link rel="stylesheet" href="http://fonts.useso.com/css?family=Open+Sans:400,300">
+
+
+	<!-- ace styles -->
+	<link rel="stylesheet" href="css/ace.min.css">
+
+</head>
+
+<body>
+
+	<div class="row">
+		<div class="col-sm-6">
+			<div class="widget-box">
+				<div class="widget-header header-color-blue2">
+					<h4 class="lighter smaller">Choose Categories</h4>
+				</div>
+
+				<div class="widget-body">
+					<div class="widget-main padding-8">
+						<div id="tree1" class="tree tree-selectable">
+							<div class="tree-folder" style="display:none;">
+								<div class="tree-folder-header"> <i class="icon-plus"></i>
+									<div class="tree-folder-name"></div>
+								</div>
+								<div class="tree-folder-content"></div>
+								<div class="tree-loader" style="display: none;"></div>
+							</div>
+							<div class="tree-item" style="display:none;"> <i class="icon-remove"></i>
+								<div class="tree-item-name"></div>
+							</div>
+							<div class="tree-folder" style="display: block;">
+								<div class="tree-folder-header"> <i class="icon-plus"></i>
+									<div class="tree-folder-name">For Sale</div>
+								</div>
+								<div class="tree-folder-content"></div>
+								<div class="tree-loader" style="display: none;">
+									<div class="tree-loading"><i class="icon-refresh icon-spin blue"></i></div>
+								</div>
+							</div>
+							<div class="tree-folder" style="display: block;">
+								<div class="tree-folder-header"> <i class="icon-plus"></i>
+									<div class="tree-folder-name">Vehicles</div>
+								</div>
+								<div class="tree-folder-content"></div>
+								<div class="tree-loader" style="display: none;">
+									<div class="tree-loading"><i class="icon-refresh icon-spin blue"></i></div>
+								</div>
+							</div>
+							<div class="tree-folder" style="display: block;">
+								<div class="tree-folder-header"> <i class="icon-plus"></i>
+									<div class="tree-folder-name">Rentals</div>
+								</div>
+								<div class="tree-folder-content"></div>
+								<div class="tree-loader" style="display: none;">
+									<div class="tree-loading"><i class="icon-refresh icon-spin blue"></i></div>
+								</div>
+							</div>
+							<div class="tree-folder" style="display: block;">
+								<div class="tree-folder-header"> <i class="icon-plus"></i>
+									<div class="tree-folder-name">Real Estate</div>
+								</div>
+								<div class="tree-folder-content"></div>
+								<div class="tree-loader" style="display: none;">
+									<div class="tree-loading"><i class="icon-refresh icon-spin blue"></i></div>
+								</div>
+							</div>
+							<div class="tree-folder" style="display: block;">
+								<div class="tree-folder-header"> <i class="icon-plus"></i>
+									<div class="tree-folder-name">Pets</div>
+								</div>
+								<div class="tree-folder-content"></div>
+								<div class="tree-loader" style="display: none;">
+									<div class="tree-loading"><i class="icon-refresh icon-spin blue"></i></div>
+								</div>
+							</div>
+							<div class="tree-item" style="display: block;"> <i class="icon-remove"></i>
+								<div class="tree-item-name">Tickets</div>
+							</div>
+							<div class="tree-item" style="display: block;"> <i class="icon-remove"></i>
+								<div class="tree-item-name">Services</div>
+							</div>
+							<div class="tree-item" style="display: block;"> <i class="icon-remove"></i>
+								<div class="tree-item-name">Personals</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!--[if !IE]> -->
+
+	<script src="js/jquery-2.0.3.min.js"></script>
+
+	<!-- <![endif]-->
+
+	<script src="js/bootstrap.min.js"></script>
+
+	<!-- page specific plugin scripts -->
+
+	<script src="js/fuelux.tree-sampledata.js"></script>
+	<script src="js/fuelux.tree.min.js"></script>
+
+	<!-- ace scripts -->
+
+	<script src="js/ace-elements.min.js"></script>
+	<script src="js/ace.min.js"></script>
+
+	<!-- inline scripts related to this page -->
+
+	<script type="text/javascript">
+		jQuery(function ($) {
+
+			$('#tree1').ace_tree({
+				dataSource: treeDataSource,
+				multiSelect: true,
+				loadingHTML: '<div class="tree-loading"><i class="icon-refresh icon-spin blue"></i></div>',
+				'open-icon': 'icon-minus',
+				'close-icon': 'icon-plus',
+				'selectable': true,
+				'selected-icon': 'icon-ok',
+				'unselected-icon': 'icon-remove'
+			});
+		});
+	</script>
+
+	<P>文件来源：http://www.html5code.net/sucai/code-3696.html</P>
+
+</body>
+
+</html>

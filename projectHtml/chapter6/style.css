@@ -1,0 +1,112 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    background: rgb(86, 228, 221);
+}
+
+body {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 100%;
+    text-align: center;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2.8em;
+    font-weight: 300;
+    text-transform: capitalize;
+    color: #333;
+    text-shadow: 1px 1px 1px #000;
+    letter-spacing: 2px;
+    margin: 1.2em 1vw;
+    text-align: center;
+}
+
+#login-form {
+    max-width: 500px;
+    margin: 0 5vw;
+    padding: 3.5vw;
+    border-width: 5px 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff;
+}
+
+.txt {
+    flex-basis: 100%;
+    margin-bottom: 1.5em;
+}
+#ty-email, #ty-pwd {
+    width: 100%;
+    color: rgb(0, 0, 0);
+    outline: none;
+    background: rgba(192, 192, 192, 0.726);
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    padding: 12px;
+    box-sizing: border-box;
+    border: none;
+    -webkit-appearance: none;
+    font-family: 'Catamaran', sans-serif;
+}
+
+ .login ::placeholder {  
+    color:rgb(95, 95, 95);
+ }
+
+ .msg {
+     color: red;
+     text-align: left;
+     margin: 5px 0;
+     font-size: 14px;
+ }
+
+.login-btn input {
+    color: rgb(255, 255, 255);
+    background: rgba(46, 45, 45, 0.904);
+    width: 100%;
+    padding: 0.4em 0;
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.login-btn input:hover {
+    color: rgb(255, 255, 255);
+    background: rgb(46, 46, 46);
+}
+
+.login-btn {
+    margin-top: 1em;
+    width: 100%;
+}
+
+.account {
+    font-size: .8em;
+    color: rgb(95, 95, 95);
+}
+
+.copyright {
+    margin: 4em 0 2em;
+}
+
+.copyright p {
+    color: #333;
+    font-size: 1em;
+    letter-spacing: 1.5px;
+    line-height: 1.8;
+    margin: 0 3vw;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>文件上传</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #eee;
+        }
+
+        #wp {
+            margin: 30px;
+        }
+
+        #wp input {
+            border: solid 1px #333;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <script>
+        function UploadFile() {
+            var fileObj = document.getElementById("fileupload");
+            fileObj.click();
+        }
+
+        function changeFile() {
+            var fileObj = document.getElementById("fileupload");
+            var fileValue = fileObj.value;
+            var filePath = document.getElementById("filePath")
+            filePath.innerHTML = "上传的文件是：" + fileValue
+        }
+    </script>
+
+    <div id="wp">
+        <h5>send_keys 文件上传</h5>
+        <input id="uploadFile" type="file" />
+    </div>
+
+    <div id="wp">
+        <form>
+            <h5>使用第三方工具 文件上传</h5>
+            <input id="fileupload" type="file" style="display:none" onchange="changeFile()" />
+            <input id="fileupload-btn" type="button" onclick="UploadFile()" value="上传文件" />
+            <p id="filePath"></p>
+        </form>
+    </div>
+</body>
+
+</html>
