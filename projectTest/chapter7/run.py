@@ -6,6 +6,8 @@ Project: TYNAM后台管理系统
 @Author: Tynam
 """
 
+import sys
+sys.path.append('./../../')
 from projectTest.chapter7.test.runner.main import Main
 
 
