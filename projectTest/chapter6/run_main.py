@@ -15,7 +15,9 @@ current_path = os.path.abspath(os.path.dirname(__file__))
 report_path = current_path + '/report/'
 
 # 获取当前时间
-now = time.strftime("%Y-%m-%d %H：%M", time.localtime(time.time()))
+# now = time.strftime("%Y-%m-%d %H：%M", time.localtime(time.time()))
+# python3中路径中含有冒号可能会导致输出错误
+now = time.strftime('%Y{y}%m{m}%d{d}%H{h}%M{M}%S{s}').format(y="年", m="月", d="日", h="时", M="分", s="秒")
 
 # 标题
 title = u"TYNAM后台管理系统"
