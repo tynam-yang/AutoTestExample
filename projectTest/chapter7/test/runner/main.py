@@ -23,7 +23,8 @@ class Main:
             report_path = report_path
 
         # 获取当前时间
-        now = time.strftime("%Y-%m-%d %H：%M", time.localtime(time.time()))
+        # now = time.strftime("%Y-%m-%d %H：%M", time.localtime(time.time()))
+        now = time.strftime('%Y{y}%m{m}%d{d}%H{h}%M{M}%S{s}').format(y="年", m="月", d="日", h="时", M="分", s="秒")
         # 标题
         title = u"TYNAM后台管理系统"
         # 设置报告存放路径和命名
