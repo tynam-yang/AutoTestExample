@@ -14,7 +14,7 @@ checkboxs = driver.find_elements_by_tag_name('input')
 # 将所有的多选框进行勾选
 for checkbox in checkboxs:
     # 去除已经被勾选的复选框
-    if checkbox.get_attribute('checked') == None:
+    if checkbox.get_attribute('checked') is None:
         checkbox.click()
         time.sleep(1)
 
