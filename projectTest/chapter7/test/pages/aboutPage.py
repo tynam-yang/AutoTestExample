@@ -1,4 +1,4 @@
-# coding=utf-8
+# -*-coding:utf-8-*-
 
 from projectTest.chapter7.test.pages.loginPage import LoginPage
 from selenium.webdriver.common.by import By

@@ -1,4 +1,4 @@
-# coding=utf-8
+# -*-coding:utf-8-*-
 
 from projectTest.chapter7.test.pages.homePage import HomePage
 import unittest

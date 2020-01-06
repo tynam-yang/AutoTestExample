@@ -1,4 +1,4 @@
-# coding=utf-8
+# -*-coding:utf-8-*-
 
 from projectTest.chapter7.test.pages.basePage import BasePage
 from projectTest.chapter7.utils.ReadConfig import ReadConfig

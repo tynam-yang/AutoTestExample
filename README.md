@@ -24,6 +24,7 @@ projectTest：示例中所产生的py文件和项目结构。
 |projectHtml/chapter3/period10-2.html|第三章 第十节 3小节 frame与iframe操作|projectTest/chapter3/period10-3.py|iframe操作|
 |projectHtml/chapter3/period11.html|第三章 第十一节 文件上传操作|projectTest/chapter3/period11-1.py|send_keys文件上传|
 |--|--|projectTest/chapter3/period11-2.py|AutoIt工具文件上传|
+|--|--|projectTest/chapter3/period11-3.py|WinSpy工具文件上传|
 |projectHtml/chapter3/period12/period12.html|第三章 第十二节 文件下载操作|projectTest/chapter3/period12.py|文件下载|
 |--|第四章 第二节 Test fixture|projectTest/chapter4/period2.py|测试数据的准备与销毁|
 |--|第四章 第三节 Test Case|projectTest/chapter4/period3.py|测试用例|
@@ -33,8 +34,8 @@ projectTest：示例中所产生的py文件和项目结构。
 |--|第五章 第五节 邮件模块smtplib|projectTest/chapter5/period5.py|邮件模块smtplib的使用|
 |--|第五章 第六节 日志logging|projectTest/chapter5/period6.py|日志logging模块的使用|
 |--|第五章 第七节 CSV文件读写|projectTest/chapter5/period7/period7.py|CSV文件读写|
-|projectHtml/chapter6/index.html|第六章 数据驱动 测试登录页面|projectTest/chapter6|数据驱动目录结构及测试py文件|
-|projectHtml/chapter7/period4-1/index.html|第七章 第五节 1小节 Tab切换|--|--|
-|projectHtml/chapter7/period4-2/index.html|第七章 第五节 2小节 多级菜单|--|--|
-|projectHtml/chapter7/period4-6/index.html|第七章 第五节 4小节 分页|--|--|
+|projectHtml/chapter6/index.html|第八章 数据驱动 测试登录页面|projectTest/chapter6|数据驱动目录结构及测试py文件|
+|projectHtml/chapter7/period4-1/index.html|第九章 第五节 1小节 Tab切换|--|--|
+|projectHtml/chapter7/period4-2/index.html|第九章 第五节 2小节 多级菜单|--|--|
+|projectHtml/chapter7/period4-6/index.html|第九章 第五节 4小节 分页|--|--|
 |--|--|projectTest/chapter7|PO模型，目录结构及测试py文件|

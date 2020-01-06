@@ -1,4 +1,4 @@
-# coding=utf-8
+# -*-coding:utf-8-*-
 
 from projectTest.chapter7.utils.HTMLTestRunner import HTMLTestRunner
 import unittest, os, time

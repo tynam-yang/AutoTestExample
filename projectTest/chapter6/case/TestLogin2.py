@@ -1,4 +1,4 @@
-# coding=utf-8
+# -*-coding:utf-8-*-
 
 from projectTest.chapter6.common.ExcelUtil import ExcelUtil
 import unittest

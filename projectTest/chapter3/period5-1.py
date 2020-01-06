@@ -1,4 +1,4 @@
-# coding=utf-8
+# -*-coding:utf-8-*-
 
 from selenium import webdriver
 import time
@@ -32,7 +32,7 @@ driver.quit()
 
 '''利用list的index进行切换窗口'''
 """
-# coding=utf-8
+# -*-coding:utf-8-*-
 
 from selenium import webdriver
 import time
