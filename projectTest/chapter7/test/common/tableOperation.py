@@ -1,7 +1,8 @@
 # -*-coding:utf-8-*-
 
-from selenium.webdriver.common.by import By
 from time import sleep
+from projectTest.chapter7.test.common.elementIsExist import ElementIsExist
+
 
 
 class TableOperation(object):
@@ -15,26 +16,23 @@ class TableOperation(object):
         """
         sleep(1)
 
-        # table、header、body_rows、body_rows_columns
-        table_header_body = [{'table #dataArea>table': By.CSS_SELECTOR,
-                              'table #dataArea>table>.header>td': By.CSS_SELECTOR,
-                              "table #dataArea>table>tr:not(.header)": By.CSS_SELECTOR,
-                              "table #dataArea>table>tr:not(.header)>td": By.CSS_SELECTOR},
+        # 列表顺序：table、header、body_rows、body_rows_columns
+        table_header_body = [['table #dataArea>table',
+                              'table #dataArea>table>.header>td',
+                              "table #dataArea>table>tr:not(.header)",
+                              "table #dataArea>table>tr:not(.header)>td"],
                        ]
 
         # 获取画面显示的table
         for table in table_header_body:
-            keys = list(table.keys())
-            values = list(table.values())
-
             # 如果找到的父节点为空，则父节点不存在，则查找的table不匹配,在页面中不存在
-            if len(self.driver.find_elements(values[0], keys[0])) > 0:
-                    table = self.driver.find_element(values[0], keys[0])
-                    headers = table.find_elements(values[1], keys[1])
-                    body_rows = table.find_elements(values[2], keys[2])
+            if ElementIsExist(self.driver).is_exist(table[0]):
+                    table = self.driver.find_element_by_css_selector(table[0])
+                    headers = table.find_elements_by_css_selector(table[1])
+                    body_rows = table.find_elements_by_css_selector(table[2])
                     rows = []
                     for body_rows in body_rows:
-                        body_rows_column = body_rows.find_elements(values[3], keys[3])
+                        body_rows_column = body_rows.find_elements_by_css_selector(table[3])
                         rows.append(body_rows_column)
                     return headers, rows
             else:
@@ -71,6 +69,7 @@ class TableOperation(object):
 
 if __name__ == '__main__':
     from selenium import webdriver
+    from selenium.webdriver.common.by import By
     driver = webdriver.Chrome()
     driver.maximize_window()
     driver.get('http://localhost:35524/#/')

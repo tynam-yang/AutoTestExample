@@ -1,7 +1,7 @@
 # -*-coding:utf-8-*-
 
-from selenium.webdriver.common.by import By
 from time import sleep
+from projectTest.chapter7.test.common.elementIsExist import ElementIsExist
 
 
 class MultiMenuOperation(object):
@@ -11,29 +11,28 @@ class MultiMenuOperation(object):
 
     def get_all_menu(self):
         """获取所有的菜单"""
+        driver = self.driver
         sleep(1)
 
         # 获取所有的tab父元素
-        menu_fathers = [{'nav':By.ID, '#nav>ul>li>a':By.CSS_SELECTOR, '#nav>ul>li ul>li>a':By.CSS_SELECTOR},
-                       {'nav1': By.ID, 'a': By.TAG_NAME},
-                       ]
+        fathers_menus = [['#nav', '#nav>ul>li>a', '#nav>ul>li ul>li>a'],
+                        ['#nav1', 'a', 'div'],
+                        ]
 
         # 获取画面显示父下的所有菜单
         menu_level = []
-        for menu_father in menu_fathers:
-            keys = list(menu_father.keys())
-            values = list(menu_father.values())
-
-            # 确定一级菜单的父元素在页面中出现
-            if len(self.driver.find_elements(values[0], keys[0])) > 0:
+        for father_menu in fathers_menus:
+            #  使用is_exist()方法确定一级菜单的父元素在页面中出现
+            father_exist = ElementIsExist(driver).is_exist(father_menu[0])
+            if father_exist:
                 # 将第一级菜单添加到list中的第一个元素
-                if len(self.driver.find_elements(values[1], keys[1])) > 0:
-                    menu_level_1 = self.driver.find_elements(values[1], keys[1])
+                if ElementIsExist(driver).is_exist(father_menu[1]):
+                    menu_level_1 = driver.find_elements_by_css_selector(father_menu[1])
                     menu_level.append(menu_level_1)
 
                     # 将第二级菜单添加到list中的第二个元素
-                    if len(self.driver.find_elements(values[2], keys[2])) > 0:
-                        menu_level_2 = self.driver.find_elements(values[2], keys[2])
+                    if ElementIsExist(driver).is_exist(father_menu[2]):
+                        menu_level_2 = driver.find_elements_by_css_selector(father_menu[2])
                         menu_level.append(menu_level_2)
                         return menu_level
                 return menu_level

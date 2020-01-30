@@ -1,7 +1,7 @@
 # -*-coding:utf-8-*-
 
-from selenium.webdriver.common.by import By
 from time import sleep
+from projectTest.chapter7.test.common.elementIsExist import ElementIsExist
 
 
 class TabOperation(object):
@@ -9,25 +9,25 @@ class TabOperation(object):
     def __init__(self, driver):
         self.driver = driver
 
-    def get_all_tab(self):
-        """获取所有的tab"""
+     def get_all_tab(self):
+            """获取所有的tab"""
         sleep(1)
 
         # 获取所有的tab父元素
-        tab_fathers = [{'tabs1':By.CLASS_NAME, 'a2':By.TAG_NAME},
-                       {'tabs': By.CLASS_NAME, 'a': By.TAG_NAME},
+        # 元素定位，我们默认取css定位
+        fathers_tabs = [['.tabs1', 'a2'],
+                       ['.tabs', 'a'],
                        ]
 
         # 获取画面显示父下的所有tab
-        for tab_father in tab_fathers:
-            keys = list(tab_father.keys())
-            values = list(tab_father.values())
-
-            # 如果找到的父节点为空，则父节点不存在，则查找的tab不匹配
-            if self.driver.find_elements(values[0], keys[0]).__len__() > 0:
-                    ul = self.driver.find_element(values[0], keys[0])
-                    tabs = ul.find_elements(values[1], keys[1])
-                    return tabs
+        for father_tab in fathers_tabs:
+            # 使用is_exist()方法判断父节点是否存在，如果父节点不存在，则查找的tab不匹配
+            father_exist = ElementIsExist(self.driver).is_exist(father_tab[0])
+            # 父节点存在，则进行操作
+            if father_exist:
+                father = self.driver.find_element_by_css_selector(father_tab[0])
+                tabs = father.find_elements_by_css_selector(father_tab[1])
+                return tabs
 
     def switch_tab(self, tab_text):
         """
