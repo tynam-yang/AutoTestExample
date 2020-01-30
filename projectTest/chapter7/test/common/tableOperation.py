@@ -17,23 +17,23 @@ class TableOperation(object):
         sleep(1)
 
         # 列表顺序：table、header、body_rows、body_rows_columns
-        table_header_body = [['table #dataArea>table',
+        tables_header_body = [['table #dataArea>table',
                               'table #dataArea>table>.header>td',
                               "table #dataArea>table>tr:not(.header)",
                               "table #dataArea>table>tr:not(.header)>td"],
                        ]
 
         # 获取画面显示的table
-        for table in table_header_body:
+        for table_header_body in tables_header_body:
             # 如果找到的父节点为空，则父节点不存在，则查找的table不匹配,在页面中不存在
-            if ElementIsExist(self.driver).is_exist(table[0]):
-                    table = self.driver.find_element_by_css_selector(table[0])
-                    headers = table.find_elements_by_css_selector(table[1])
-                    body_rows = table.find_elements_by_css_selector(table[2])
+            if ElementIsExist(self.driver).is_exist(table_header_body[0]):
+                    table = self.driver.find_element_by_css_selector(table_header_body[0])
+                    headers = table.find_elements_by_css_selector(table_header_body[1])
+                    body_rows = table.find_elements_by_css_selector(table_header_body[2])
                     rows = []
-                    for body_rows in body_rows:
-                        body_rows_column = body_rows.find_elements_by_css_selector(table[3])
-                        rows.append(body_rows_column)
+                    for body_row in body_rows:
+                        body_row_column = body_row.find_elements_by_css_selector(table_header_body[3])
+                        rows.append(body_row_column)
                     return headers, rows
             else:
                 print("table定位失败")
@@ -70,9 +70,9 @@ class TableOperation(object):
 if __name__ == '__main__':
     from selenium import webdriver
     from selenium.webdriver.common.by import By
-    driver = webdriver.Chrome()
+    driver = webdriver.Chrome('/Users/ydj/Desktop/ydj/projectAutoTest/chromedriver')
     driver.maximize_window()
-    driver.get('http://localhost:35524/#/')
+    driver.get('http://localhost:33800/#/')
     sleep(1)
     driver.find_element(By.CLASS_NAME, "email").send_keys('admin@tynam.com')
     driver.find_element(By.CLASS_NAME, "password").send_keys('tynam123')
@@ -80,4 +80,3 @@ if __name__ == '__main__':
     sleep(1)
     table = TableOperation(driver)
     table.row_click("姓 名", "严寒")
-
