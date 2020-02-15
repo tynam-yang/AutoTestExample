@@ -8,7 +8,7 @@ Project: TYNAM后台管理系统
 
 import sys
 sys.path.append('./../../')
-from projectTest.chapter7.test.runner.main import Main
+from projectTest.chapter9.test.runner.main import Main
 
 
 if __name__ == '__main__':
