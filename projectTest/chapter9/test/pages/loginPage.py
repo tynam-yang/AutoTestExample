@@ -1,9 +1,9 @@
 # -*-coding:utf-8-*-
 
-from projectTest.chapter7.test.pages.basePage import BasePage
-from projectTest.chapter7.utils.ReadConfig import ReadConfig
-from selenium.webdriver.common.by import By
 import os
+from selenium.webdriver.common.by import By
+from projectTest.chapter9.test.pages.basePage import BasePage
+from projectTest.chapter9.utils.ReadConfig import ReadConfig
 
 
 class LoginPage(BasePage):

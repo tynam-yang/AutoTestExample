@@ -1,7 +1,7 @@
 # -*-coding:utf-8-*-
 
-from projectTest.chapter7.test.pages.aboutPage import AboutPage
 import unittest
+from projectTest.chapter9.test.pages.aboutPage import AboutPage
 
 
 class TestAbout(unittest.TestCase):

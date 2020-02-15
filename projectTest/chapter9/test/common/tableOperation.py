@@ -1,7 +1,7 @@
 # -*-coding:utf-8-*-
 
 from time import sleep
-from projectTest.chapter7.test.common.elementIsExist import ElementIsExist
+from projectTest.chapter9.test.common.elementIsExist import ElementIsExist
 
 
 
