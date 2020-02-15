@@ -17,7 +17,7 @@ class BasePage(object):
         """
         if driver is None:
             current_path = os.path.abspath(os.path.dirname(__file__))
-            driver_path = current_path + '/../../drivers/chromedriver'
+            driver_path = current_path + '/../../drivers/chromedriver.exe'
             self.driver = webdriver.Chrome(driver_path)
         else:
             self.driver = driver
