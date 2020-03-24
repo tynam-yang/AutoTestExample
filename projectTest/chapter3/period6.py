@@ -6,7 +6,7 @@ import time
 options = webdriver.ChromeOptions()
 options.add_experimental_option('w3c', False)
 driver = webdriver.Chrome(options=options)
-driver.get('http://localhost:63342/projectAutoTest/projectHtml/chapter3/period5-3.html')
+driver.get('http://localhost:63342/projectAutoTest/projectHtml/chapter3/period6.html')
 time.sleep(3)
 
 # 内容显示
