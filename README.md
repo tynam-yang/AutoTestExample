@@ -16,7 +16,7 @@ projectTest：示例中所产生的py文件和项目结构。
 |projectHtml/chapter3/period4.html|3.4 定位一组元素|projectTest/chapter3/period4.py|定位一组元素，多选框实例操作|
 |projectHtml/chapter3/period5-1-1.html|3.5.12 切换浏览器窗口|projectTest/chapter3/period5-1.py|浏览器窗口切换|
 |projectHtml/chapter3/period5-2.html|3.5.13 滚动条操作|projectTest/chapter3/period5-2.py|滚动条操作|
-|projectHtml/chapter3/period5-3.html|3.6.7 对象显示状态 3.6.8对象编辑状态 3.6.9对象选择状态|projectTest/chapter3/period5-3.py|元素显示状态、输入框编辑状态、元素选中状态|
+|projectHtml/chapter3/period6.html|3.6.7 对象显示状态 3.6.8对象编辑状态 3.6.9对象选择状态|projectTest/chapter3/period6.py|元素显示状态、输入框编辑状态、元素选中状态|
 |projectHtml/chapter3/period7.html|3.7 键盘操作|projectTest/chapter3/period7.py|模拟键盘操作|
 |projectHtml/chapter3/period9.html|3.9 下拉框操作|projectTest/chapter3/period9.py|下拉框选择元素|
 |projectHtml/chapter3/period10-1.html|3.10.1 Windows弹窗 3.10.2 非Windows弹窗|projectTest/chapter3/period10-1.py|windows弹窗操作|
