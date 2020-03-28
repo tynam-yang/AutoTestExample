@@ -52,12 +52,12 @@ class Login(object):
 
         # 邮箱地址、密码、点击登录按钮操作
         time.sleep(1)
-        if email != None:
+        if email is not None:
             email_element = self.driver.find_element_by_id('ty-email')
             email_element.send_keys(email)
         time.sleep(1)
 
-        if password != None:
+        if password is not None:
             password_element = self.driver.find_element_by_id('ty-pwd')
             password_element.send_keys(password)
 
