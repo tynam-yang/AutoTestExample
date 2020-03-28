@@ -8,14 +8,14 @@ class ExcelUtil(object):
     def __init__(self, excel_path=None, sheet_name=None):
         """获取 excel 工作表"""
 
-        if excel_path == None:
+        if excel_path is None:
             current_path = os.path.abspath(os.path.dirname(__file__))
             self.excel_path = current_path + '/../data/casedata.xlsx'
 
         else:
             self.excel_path = excel_path
 
-        if sheet_name == None:
+        if sheet_name is None:
             self.sheet_name = "Sheet"
         else:
             self.sheet_name = sheet_name
