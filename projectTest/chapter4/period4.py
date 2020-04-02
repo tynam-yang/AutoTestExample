@@ -8,7 +8,7 @@ class TestAssert(unittest.TestCase):
     def setUp(self):
         time.sleep(1)
 
-    def test_python_sucess(self):
+    def test_python_success(self):
         print("python提供的断言，断言成功")
         assert 1 == 1
 
@@ -16,7 +16,7 @@ class TestAssert(unittest.TestCase):
         print("python提供的断言，断言失败")
         assert 1 > 2
 
-    def test_unittest_sucess(self):
+    def test_unittest_success(self):
         print("unittest提供的断言，断言成功")
         self.assertIsNone(None)
 
