@@ -34,7 +34,7 @@ projectTest：示例中所产生的py文件和项目结构。
 |--|7.5 邮件模块smtplib|projectTest/chapter7/period5.py|邮件模块smtplib的使用|
 |--|7.6 日志logging|projectTest/chapter7/period6.py|日志logging模块的使用|
 |--|7.7 CSV文件读写|projectTest/chapter7/period7/period7.py|CSV文件读写|
-|projectHtml/chapter8/index.html|8.0 测试登录页面|projectTest/chapter6|数据驱动目录结构及测试py文件|
+|projectHtml/chapter8/index.html|8.0 测试登录页面|projectTest/chapter8|数据驱动目录结构及测试py文件|
 |projectHtml/chapter9/period4-1/index.html|9.4.1 Tab切换|--|--|
 |projectHtml/chapter9/period4-2/index.html|9.4.2 多级菜单|--|--|
 |projectHtml/chapter9/period4-5/index.html|9.4.5 分页|--|--|
