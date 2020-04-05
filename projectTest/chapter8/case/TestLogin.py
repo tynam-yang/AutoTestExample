@@ -1,10 +1,10 @@
 # -*-coding:utf-8-*-
 
-from projectTest.chapter8.common.ExcelUtil import ExcelUtil
+import time
 import unittest
 from ddt import ddt, data, unpack
 from selenium import webdriver
-import time
+from projectTest.chapter8.common.ExcelUtil import ExcelUtil
 
 
 class Case(object):
