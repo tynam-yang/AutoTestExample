@@ -1,7 +1,8 @@
 # -*-coding:utf-8-*-
 
-from selenium import webdriver
 import time
+from selenium import webdriver
+
 
 chrome_options = webdriver.ChromeOptions()
 prefs = {

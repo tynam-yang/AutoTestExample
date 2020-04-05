@@ -1,8 +1,8 @@
 # -*-coding:utf-8-*-
 
+import time
 from selenium import webdriver
 from selenium.webdriver.support.select import Select
-import time
 
 
 driver = webdriver.Chrome()

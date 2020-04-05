@@ -1,8 +1,8 @@
 # -*-coding:utf-8-*-
 
-from selenium import webdriver
-from time import sleep
 import os
+from time import sleep
+from selenium import webdriver
 
 
 driver = webdriver.Chrome()

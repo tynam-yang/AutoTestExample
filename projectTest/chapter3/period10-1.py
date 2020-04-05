@@ -1,9 +1,9 @@
 # -*-coding:utf-8-*-
 
+import time
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-import time
 
 
 driver = webdriver.Chrome()

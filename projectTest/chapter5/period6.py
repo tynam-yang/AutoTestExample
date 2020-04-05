@@ -1,8 +1,8 @@
 # -*-coding:utf-8-*-
 
-import logging
-import datetime
 import os
+import datetime
+import logging
 
 
 class TestLog:

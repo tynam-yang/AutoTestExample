@@ -1,5 +1,6 @@
-from selenium import webdriver
 import time
+from selenium import webdriver
+
 
 driver = webdriver.Chrome()
 driver.get("http://localhost:63342/projectAutoTest/projectHtml/chapter1/period2/index.html")

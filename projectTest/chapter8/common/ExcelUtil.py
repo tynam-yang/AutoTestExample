@@ -1,7 +1,7 @@
 # -*-coding:utf-8-*-
 
-from openpyxl import load_workbook
 import os
+from openpyxl import load_workbook
 
 
 class ExcelUtil(object):
