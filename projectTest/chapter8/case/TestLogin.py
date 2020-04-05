@@ -1,6 +1,6 @@
 # -*-coding:utf-8-*-
 
-from projectTest.chapter6.common.ExcelUtil import ExcelUtil
+from projectTest.chapter8.common.ExcelUtil import ExcelUtil
 import unittest
 from ddt import ddt, data, unpack
 from selenium import webdriver
@@ -76,7 +76,7 @@ class Login(object):
             passrowd_message = self.driver.find_element_by_id('ty-pwd-error').text
             assert passrowd_message == assert_message
 
-        elif assert_type == 'login sucess' or assert_type == 'login fail':
+        elif assert_type == 'login success' or assert_type == 'login fail':
             login_message = self.driver.switch_to.alert.text
             assert login_message == assert_message
         else:
@@ -89,7 +89,7 @@ class TestLogin(unittest.TestCase):
 
     def setUp(self):
         self.driver = webdriver.Chrome()
-        url = "file:///Users/ydj/Desktop/ydj/projectAutoTest/projectHtml/chapter6/index.html"
+        url = "http://localhost:63342/AutoTestExample/projectHtml/chapter8/index.html"
         self.driver.implicitly_wait(20)
         self.driver.maximize_window()
         self.driver.get(url=url)
