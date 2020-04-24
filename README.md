@@ -1,4 +1,4 @@
-# autoTest
+# AutoTestExample
 自动化测试实例
 
 projectHtml和projectTest目录下以chapter开头命名的目录为对应的章节。
