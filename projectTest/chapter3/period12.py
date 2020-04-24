@@ -6,7 +6,7 @@ from selenium import webdriver
 
 chrome_options = webdriver.ChromeOptions()
 prefs = {
-    "download.prompt_for_download": False, # 弹窗
+    "profile.default_content_settings.popups": 0, # 禁止弹窗
     "download.default_directory": "C:\\Users\\TynamYang\\Desktop\\", # 下载目录 
 }
 
