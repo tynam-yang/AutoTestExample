@@ -1,6 +1,8 @@
 # AutoTestExample
 自动化测试实例
 
+## 【读者必看】《Python Web自动化测试入门与实战》--错误知识点修正 https://www.cnblogs.com/tynam/p/12935069.html
+
 projectHtml和projectTest目录下以chapter开头命名的目录为对应的章节。
 
 projectHtml：示例中所使用的HTML脚本。
