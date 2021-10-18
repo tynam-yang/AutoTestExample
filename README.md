@@ -9,6 +9,8 @@ projectHtml：示例中所使用的HTML脚本。
 
 projectTest：示例中所产生的py文件和项目结构。
 
+注意：9.4 练习页面在 projectHtml/chapter9/ 下，第九章整个测试项目为 https://github.com/tynam-yang/AutoTestProject
+
 示例代码对应表：
 
 |HTML代码|应用位置|py文件|py文件说明|
